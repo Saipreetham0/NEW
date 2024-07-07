@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leave Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="/assets/icons/logo.png" alt="Markatlas Inkjet Logo" />
+        </div>
+
+        <div class="profile">
+          <p>Hi Ram</p>
+          <a href="#">View My Info</a>
+        </div>
+
+        <ul>
+          <li class="active">
+            <a href="#">
+              <img src="/assets/icons/home.svg" alt="Home Icon" />
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/icons/profile.svg" alt="Profile Icon" />
+              <span>My Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/icons/dashboard.svg" alt="Dashboard Icon" />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/icons/leave.svg" alt="Leave Icon" />
+              <span>Leave</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/icons/attendance.svg" alt="Attendance Icon" />
+              <span>Attendance</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/icons/payroll.svg" alt="Payroll Icon" />
+              <span>Payroll</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/icons/about.svg" alt="About Icon" />
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/icons/settings.svg" alt="Settings Icon" />
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Engage</a></li>
+            <li><a href="#">To do</a></li>
+            <li><a href="#">Salary</a></li>
+            <li class="active"><a href="#">Leave</a></li>
+            <ul>
+              <li class="active"><a href="#">Leave Apply</a></li>
+              <li><a href="#">Leave Balances</a></li>
+              <li><a href="#">Leave Calendar</a></li>
+              <li><a href="#">Holiday Calendar</a></li>
+              <li><a href="#">Team On Leave</a></li>
+            </ul>
+            <li><a href="#">Attendance</a></li>
+            <li><a href="#">Document Center</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Helpdesk</a></li>
+          </ul>
+        </nav> -->
+      </aside>
+      <main>
+        <header>
+          <div>
+            <h3>Leave</h3>
+            <p>Restricted Holiday</p>
+            <p>Leave Cancel</p>
+            <p>Come off grant</p>
+          </div>
+          <div class="tabs">
+            <button class="active">Apply</button>
+            <button>Pending</button>
+            <button>History</button>
+          </div>
+        </header>
+        <div>
+          <section class="leave-form">
+            <p class="info">
+              Leave is earned by an employee and granted by the employer to take
+              time off work. The employee is free to avail this leave in
+              accordance with the company policy.
+            </p>
+            <form>
+              <label for="leave-type">Leave type</label>
+              <select id="leave-type">
+                <option value="">Select type</option>
+              </select>
+
+              <label for="from-date">From date</label>
+              <input type="date" id="from-date" />
+              <select>
+                <option value="session1">Session 1</option>
+              </select>
+
+              <label for="to-date">To date</label>
+              <input type="date" id="to-date" />
+              <select>
+                <option value="session2">Session 2</option>
+              </select>
+
+              <label for="applying-to">Applying to?</label>
+              <input type="checkbox" id="applying-to" />
+
+              <label for="cc-to">CC to</label>
+              <input type="checkbox" id="cc-to" />
+              <input
+                type="text"
+                id="contact-details"
+                placeholder="Contact details"
+              />
+
+              <label for="reason">Reason</label>
+              <textarea id="reason" rows="4"></textarea>
+
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
